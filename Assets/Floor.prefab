@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8444426611883494922}
   - component: {fileID: 2659575122596657466}
   - component: {fileID: 6024812150295146845}
-  - component: {fileID: 4138390596083889516}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Floor
@@ -76,7 +75,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.5737328, g: 0.9688337, b: 0.65806854, a: 1}
+  m_Color: {r: 0.3075133, g: 0.108955264, b: 0.6934961, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -131,17 +130,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &4138390596083889516
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 499613237385660861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 225af403442513449b20beb38db7f2c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 4
-  floorWidth: 20
