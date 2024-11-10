@@ -1,6 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting.Dependencies.Sqlite;
 using UnityEngine;
 
 public class FloorManager : MonoBehaviour
@@ -34,7 +32,6 @@ public class FloorManager : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        print("Collided");
         other.transform.position = new Vector3(other.transform.position.x + (numFloors * floorWidth), other.transform.position.y, 0);
     }
 

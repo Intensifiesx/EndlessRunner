@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class StartingWall : MonoBehaviour
@@ -20,8 +18,6 @@ public class StartingWall : MonoBehaviour
     {
         transform.Translate(Vector3.left * speed * Time.deltaTime);
         if (transform.position.x < deletePosition)
-        {
             Destroy(gameObject);
-        }
     }
 }
