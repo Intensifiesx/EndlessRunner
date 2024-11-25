@@ -3,7 +3,8 @@ using UnityEngine;
 
 public class FloorManager : MonoBehaviour
 {
-    [SerializeField] float speed = 5f;
+    // make speed override the default value of 6f
+    public float speed = 6f;
     [SerializeField] float floorWidth = 20f;
     [SerializeField] GameObject topFloor, bottomFloor;
     ArrayList floors = new();

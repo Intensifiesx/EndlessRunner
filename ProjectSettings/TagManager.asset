@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Floor
   - OutOfBounds
+  - Jetpack
+  - Trap
+  - Coin
   layers:
   - Default
   - TransparentFX

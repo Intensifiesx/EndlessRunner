@@ -17,7 +17,5 @@ public class StartingWall : MonoBehaviour
     void FixedUpdate()
     {
         transform.Translate(Vector3.left * speed * Time.deltaTime);
-        if (transform.position.x < deletePosition)
-            Destroy(gameObject);
     }
 }

@@ -4,39 +4,30 @@ using UnityEngine;
 
 public class Trap : MonoBehaviour
 {
-    static float speed = 0f;
-    float deletePosition;
     [SerializeField] FloorManager floors;
     [SerializeField] GameObject endScreen;
+    public bool rotating = false;
 
     void Start()
     {   
-        // Set speed from FloorManager (ensure it is positive for leftward movement)
-        speed = Mathf.Abs(floors.GetSpeed());
-        
-        // Set delete position based on floor width
-        deletePosition = -floors.GetFloorWidth() * 2;
-
-        // Rotate the trap visually without affecting movement direction
+        rotating = Random.Range(0, 2) == 1;
         transform.Rotate(0, 0, Random.Range(0, 360));
     }
 
     void FixedUpdate()
     {
+        if (rotating)
+            transform.Rotate(0, 0, Time.deltaTime * 60);
         // Move the trap to the left in world space to prevent rotation from affecting movement
-        transform.Translate(Vector3.left * speed * Time.deltaTime, Space.World);
-
-        // Destroy the trap if it goes past the delete position
-        if (transform.position.x < deletePosition)
+        transform.Translate(Vector3.left * floors.GetSpeed() * Time.deltaTime, Space.World);
+        if (transform.position.x < -40)
             Destroy(gameObject);
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        print("Collision detected");
         // Destroy the trap if it collides with the player
         if (other.CompareTag("Player")) {
-            Destroy(other);
             endScreen.SetActive(true);
             Time.timeScale = 0;
         }

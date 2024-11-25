@@ -31,7 +31,7 @@ public class GroundEnemyMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") || collision.CompareTag("OutOfBounds"))
+        if (collision.CompareTag("Jetpack") || collision.CompareTag("OutOfBounds"))
         {
             Destroy(gameObject);
         }

@@ -117,6 +117,7 @@ GameObject:
   - component: {fileID: 8107459284512297526}
   - component: {fileID: 2868004208768433542}
   - component: {fileID: 3216990017713920380}
+  - component: {fileID: 2859187118134387827}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -182,6 +183,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jetpack: {fileID: 9207512048075178216}
   jumpForce: 10
+--- !u!114 &2859187118134387827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7930237055981962272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 16d63e35b160e894a895ce74f4a0df89, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Gameplay
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &8180454448613717107
 GameObject:
   m_ObjectHideFlags: 0
@@ -333,20 +364,20 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.056640625, y: 0.01171875}
-      - {x: 0.025390625, y: 0.025390625}
-      - {x: -0.0078125, y: 0.0390625}
-      - {x: -0.033203125, y: 0.0390625}
-      - {x: -0.04296875, y: 0.025390625}
-      - {x: -0.05859375, y: 0.00390625}
-      - {x: -0.05859375, y: -0.013671875}
-      - {x: -0.052734375, y: -0.03125}
-      - {x: -0.041015625, y: -0.0390625}
-      - {x: -0.009765625, y: -0.0390625}
-      - {x: 0, y: -0.037109375}
-      - {x: 0.00390625, y: -0.015625}
-      - {x: 0.03125, y: -0.013671875}
-      - {x: 0.056640625, y: -0.00390625}
+    - - {x: 0.00087982416, y: 0.011718749}
+      - {x: 0.0005722202, y: 0.019911256}
+      - {x: -0.009101773, y: 0.03422775}
+      - {x: -0.036103964, y: 0.03197155}
+      - {x: -0.042001802, y: 0.0128202755}
+      - {x: -0.054725964, y: -0.00028387737}
+      - {x: -0.05279204, y: -0.010771052}
+      - {x: -0.045321066, y: -0.023514397}
+      - {x: -0.033280022, y: -0.036161646}
+      - {x: -0.008476368, y: -0.035194714}
+      - {x: -0.00644633, y: -0.03163001}
+      - {x: 0.00003844872, y: -0.013046455}
+      - {x: 0.00095221214, y: -0.009159438}
+      - {x: 0.0037806816, y: -0.0010053951}
   m_UseDelaunayMesh: 0
 --- !u!1 &9207512048075178216
 GameObject:
